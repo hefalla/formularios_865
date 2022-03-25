@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Formularios</title>
+</head>
+<body>
+  <form>
+    <label for="Nombre">Nombre: </label>
+    <input type="text" name="Nombre" id="Nombre" value="Nombre" readonly><br><br>
+
+    <label for="apellido">Apellido: *</label>
+		<input type="text" name="prename" id="apellido" placeholder="Escriba apellido" maxlength="25" minlength="5" required><br><br>
+
+
+    <label for="Edad">Edad: </label>
+    <input type="number" id="Edad"><br><br>
+
+    <label for="Tel">Teléfono: </label>
+    <input type="phone" id="Tel" value="+57"><br><br>
+
+    <label for="password">Constraseña: </label>
+    <input type="password" id="password" required><br><br>
+
+    <p><span>E-mail</span></p>
+    <input type="email" id="email"><br><br>
+
+    <label for="date">Fecha: *</label>
+		<input type="date" name="fechas" id="date"><br><br>
+
+    		
+		<div>
+			<input type="radio" name="conect" id="internet"> 
+			<label for="internet">Internet</label>
+			<input type="radio" name="conect" id="whatsapp"> 
+			<label for="whatsapp">Whatsapp</label>
+			<input type="radio" name="conect" id="Celular"> 
+			<label for="Celular">Celular</label>
+		</div>
+
+    <div>
+			<input type="checkbox" name="pc" id="PC"> 
+			<label for="PC">PC</label>
+			<input type="checkbox" name="celular"> 
+			<label>Celular</label>
+		</div><br><br>
+
+		<select name="ciudad">
+		  <option value="armenia">Armenia</option> 
+		  <option value="manizales">Manizales</option>
+		  <option value="pereira">Pereira</option>
+      <option value="Bogotá">Bogotá</option>
+		</select><br><br>
+
+    <select>
+			<optgroup label="Quindío">
+			    <option value="valor1">Armenia</option>
+			    <option value="valor3">Carlarcá</option>
+			    <option value="valor5">Circasia</option>
+			</optgroup>
+			<optgroup label="Risaralda">
+			    <option value="valor2">Pereira</option>
+			    <option value="valor4">Dosquebradas</option>
+			    <option value="valor6">xxx</option>
+			</optgroup>
+		</select><br><br>
+
+    <label>Escriba su mensaje:</label><br>
+		<textarea rows="5" cols="30"></textarea><br>
+
+
+    <input type="reset" value="Borrar">
+		<input type="submit" value="Enviar"> <!-- Permite crear un botón -->
+		<button name="button">Otro botón</button>
+
+  </form>
+</body>
+</html>
